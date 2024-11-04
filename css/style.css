@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(89, 152, 189);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 30vh;
+    height: 80vh;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+}
+.formulario-criar input, .formulario-atualizar input {
+    padding: 10px;
+font-size: 17px;
+margin-bottom: 5px;
+border-radius: 10px;
+border-color: black;
+border-style:double;
+}
+
+.formulario-criar button, .formulario-atualizar button{
+ padding: 10px;
+ background-color: green;
+ border: none;
+ border-radius: 10px;
+ width: 50%;
+ cursor: pointer;
+ color: whitesmoke;
+font-size: larger;
+}
+
+.formulario-criar button:hover, .formulario-atualizar button:hover{
+    background-color: rgb(5, 61, 5);
+}
+/* .formulario-criar, .formulario-atualizar{
+        display: none;
+} */
+
+
+@media screen and (max-width: 400px){
+
+    .form-container{
+        width: 95vh;
+    }
+    .formulario-criar input, .formulario-atualizar input{
+        width: 100%;
+
+    }
+}
