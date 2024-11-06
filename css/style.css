@@ -1,96 +1,165 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#container{
+#container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(89, 152, 189);
-  
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-container{
-    width: 30vh;
-    height: 80vh;
+.form-container {
+    width: 100%;
+    max-width: 500px;
     background-color: antiquewhite;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.formulario-criar, .formulario-atualizar {
+    display: none;
+    margin-bottom: 20px;
+}
+
 .formulario-criar input, .formulario-atualizar input {
+    width: 100%;
     padding: 10px;
-font-size: 17px;
-margin-bottom: 5px;
-border-radius: 10px;
-border-color: black;
-border-style:double;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px double black;
 }
 
-.formulario-criar button, .formulario-atualizar button{
- padding: 10px;
- background-color: green;
- border: none;
- border-radius: 10px;
- width: 50%;
- cursor: pointer;
- color: whitesmoke;
-font-size: larger;
+.formulario-criar button, .formulario-atualizar button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
-.formulario-criar button:hover, .formulario-atualizar button:hover{
+.formulario-criar button:hover, .formulario-atualizar button:hover {
     background-color: rgb(5, 61, 5);
 }
-  .formulario-criar, .formulario-atualizar{
-        display: none;
-}  
-.botao-adcionar{
-    background-color: green;
+
+.botao-adicionar {
+    width: 100%;
     padding: 15px;
-    font-size: larger;
+    background-color: green;
+    font-size: 1.1em;
     color: aliceblue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
     border-radius: 15px;
-
-}
-.botao-adcionar:hover{
-    background-color: rgb(21, 175, 21);
-    transition-duration: 10ms;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.tabela-exibir{
-    margin-top: 15px;
+.botao-adicionar:hover {
+    background-color: rgb(21, 175, 21);
+}
+
+.tabela-exibir {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
+.tabela-exibir th, .tabela-exibir td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
 
+.tabela-exibir th {
+    background-color: #f2f2f2;
+}
 
+.tabela-exibir tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
+.tabela-exibir tr:hover {
+    background-color: #ddd;
+}
 
+.tabela-exibir button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
 
+.tabela-exibir .editar {
+    background-color: #4CAF50;
+}
 
+.tabela-exibir .editar:hover {
+    background-color: #45a049;
+}
 
+.tabela-exibir .deletar {
+    background-color: #f44336;
+}
 
+.tabela-exibir .deletar:hover {
+    background-color: #da190b;
+}
 
-
-
-@media screen and (max-width: 400px){
-
-    .form-container{
-        width: 95vh;
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 90%;
     }
-    .formulario-criar input, .formulario-atualizar input{
-        width: 100%;
 
+    .tabela-exibir th, .tabela-exibir td {
+        padding: 8px;
+    }
+
+    .botao-adicionar, .formulario-criar button, .formulario-atualizar button {
+        font-size: 1em;
     }
 }
+.banner-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+  @media screen and (max-width: 600px)
+  {
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  .title {
+    display: flex;
+    text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+
+  .logo{
+    max-width: 50%;
+    max-height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.banner{ display: grid; place-items: center; }

@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro Petshop</title>
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Petshop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body onload="readAll()">
-     <main>
-        <section name="Container-geral" id="container">
-            <div class="form-container">
-                <form class="formulario-criar">
-                    <input type="text" placeholder="Insira o nome do pet" class="nome">
+    <main>
+        <section class="banner">
+            <div class="banner-img">
+                <img src="img/banner.png" alt="">
+            </div>
+            
+            <section class="title">
+                <article>
+                    <h2>
+                        Bem vindo a tela de cadastro do PetShop <Br>
+                        <img src="img/logo.png" alt="" class="logo">
+                    </h2>
+                </article>
+        </section>
 
-                    <input type="number" placeholder="Insira a idade do pet" class="idade">
-                    <input type="text" placeholder="Insira o sexo do pet" class="sexo">
-                    
-                    
-                      </select>
-
-                    <button type="button" onclick="add()">Criar</button>
-                        </form>
-
-                        
-                            <form class="formulario-atualizar">
-                                <input type="text" placeholder="Insira o nome do pet" class="unome">
-                                <input type="number" placeholder="Insira a idade do pet" class="uidade">
-                                <input type="text" placeholder="Insira o sexo do pet" class="usexo">
-                                <button type="button" onclick="update()">Update</button>
-
-                                    </form>
-                                    <button class="botao-adcionar" type="button"  onclick="createForm()">Adicionar</button>
+        <section id="container">
            
 
+    
 
-        
-<br />
-         <section name="listar"> 
-            <table class="tabela-exibir">
-                <thead>
-                    <th>Nome: </th>
-                    <th>Idade: </th>
-                    <th>Sexo: </th>
-                    
-                </thead>
             
-            <tbody class="table_data">
-                
-                
-            </tbody>
-        </table>
-        
-        
-    </div>
-</section>
+            <div class="form-container">
+           
+                <form class="formulario-criar">
+                    <input type="text" placeholder="Insira o nome do pet" class="nome" required>
+                    <input type="number" placeholder="Insira a idade do pet" class="idade" required>
+                    <input type="text" placeholder="Insira o sexo do pet" class="sexo" required>
+                    <button type="button" onclick="add()">Criar</button>
+                </form>
+
+               
+                <form class="formulario-atualizar">
+                    <input type="text" placeholder="Insira o nome do pet" class="unome" required>
+                    <input type="number" placeholder="Insira a idade do pet" class="uidade" required>
+                    <input type="text" placeholder="Insira o sexo do pet" class="usexo" required>
+                    <button type="button" class="update-btn">Atualizar</button>
+                </form>
+
+              
+                <button class="botao-adicionar" type="button" onclick="createForm()">Adicionar</button>
+
+               
+                <section class="listar"> 
+                    <table class="tabela-exibir">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Sexo</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table_data">
+                           
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
     </main>
 
-<!-- </section> -->
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
