@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Petshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body onload="readAll()">
+    <main>
+        <section class="banner">
+            <div class="banner-img">
+                <img src="img/banner.png" alt="">
+            </div>
+            
+            <section class="title">
+                <article>
+                    <h2>
+                        Bem vindo a tela de cadastro de Tutores do PetShop <Br>
+                        <img src="img/logo.png" alt="" class="logo">
+                    </h2>
+                </article>
+        </section>
+        <a href="index.html"><button class="pet-button">Voltar</button></a>
+
+        <section id="container">
+           
+
+
+            
+            <div class="form-container">
+           
+                <form class="formulario-criar">
+                    <input type="text" placeholder="Insira o nome do tutor" class="nome" required>
+                    <input type="number" placeholder="Insira a telefone do tutor" class="tel" required>
+                    <input type="text" placeholder="Insira o pet que o tutor é responsavel" class="pet" required>
+                    <button type="button" onclick="add()">Criar</button>
+                </form>
+
+               
+                <form class="formulario-atualizar">
+                    <input type="text" placeholder="Insira o nome do tutor" class="unome" required>
+                    <input type="number" placeholder="Insira a telefone do tutor" class="utel" required>
+                    <input type="text" placeholder="Insira o pet que o tutor é responsavel" class="upet" required>
+                    <button type="button" class="update-btn">Atualizar</button>
+                </form>
+
+              
+                <button class="botao-adicionar" type="button" onclick="createForm()">Adicionar</button>
+
+               
+                <section class="listar"> 
+                    <table class="tabela-exibir">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Pet:</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table_data">
+                           
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/tutor.js"></script>
+</body>
+</html>

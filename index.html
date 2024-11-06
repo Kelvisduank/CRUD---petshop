@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Petshop</title>
+    <title>Pet Shop - Amigo Fiel</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
-<body onload="readAll()">
-    <main>
+<body class="index-body">
+    
+        
         <section class="banner">
             <div class="banner-img">
                 <img src="img/banner.png" alt="">
@@ -17,58 +17,17 @@
             <section class="title">
                 <article>
                     <h2>
-                        Bem vindo a tela de cadastro do PetShop <Br>
+                        Bem vindo a tela de Incial do PetShop <Br>
                         <img src="img/logo.png" alt="" class="logo">
                     </h2>
                 </article>
         </section>
+  
+<section class="buttons">
+    <a href="pets.html"><button class="pet-button">Tela de Cadastro Pets</button></a>
 
-        <section id="container">
-           
-
-    
-
-            
-            <div class="form-container">
-           
-                <form class="formulario-criar">
-                    <input type="text" placeholder="Insira o nome do pet" class="nome" required>
-                    <input type="number" placeholder="Insira a idade do pet" class="idade" required>
-                    <input type="text" placeholder="Insira o sexo do pet" class="sexo" required>
-                    <button type="button" onclick="add()">Criar</button>
-                </form>
-
-               
-                <form class="formulario-atualizar">
-                    <input type="text" placeholder="Insira o nome do pet" class="unome" required>
-                    <input type="number" placeholder="Insira a idade do pet" class="uidade" required>
-                    <input type="text" placeholder="Insira o sexo do pet" class="usexo" required>
-                    <button type="button" class="update-btn">Atualizar</button>
-                </form>
-
-              
-                <button class="botao-adicionar" type="button" onclick="createForm()">Adicionar</button>
-
-               
-                <section class="listar"> 
-                    <table class="tabela-exibir">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Idade</th>
-                                <th>Sexo</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table_data">
-                           
-                        </tbody>
-                    </table>
-                </section>
-            </div>
-        </section>
-    </main>
-
-    <script src="js/script.js"></script>
+    <a href="tutores.html"><button class="pet-button">Tela de Cadastro Tutores</button></a>
+</section>
+<br><br><br><br>
 </body>
 </html>
