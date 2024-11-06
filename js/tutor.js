@@ -1,6 +1,6 @@
 let data = [
-    { id: 1, name: "Armando", tel: 649999999, pet: "Paçoca" },
-    { id: 2, name: "Kalifa", tel: 219999, pet: "Bolinha" }
+    { id: 1, name: "Kelvis", tel: 1111111, pet: "Bolota" },
+    { id: 2, name: "Duank", tel: 22222, pet: "Bolinha" }
 ];
 let currentId = 3; 
 
@@ -37,10 +37,10 @@ function createForm() {
 
 function add() {
     const name = document.querySelector(".nome").value.trim();
-    const idade = parseInt(document.querySelector(".tel").value);
-    const sexo = document.querySelector(".pet").value.trim();
+    const tel = parseInt(document.querySelector(".tel").value);
+    const pet = document.querySelector(".pet").value.trim();
 
-    if (name === "" || isNaN(idade) || sexo === "") {
+    if (name === "" || isNaN(tel) || pet === "") {
         alert("Por favor, preencha todos os campos corretamente.");
         return;
     }
@@ -48,7 +48,7 @@ function add() {
     const newObj = { id: currentId++, name, tel, pet };
     data.push(newObj);
 
-
+   
     document.querySelector(".nome").value = "";
     document.querySelector(".tel").value = "";
     document.querySelector(".pet").value = "";
@@ -87,8 +87,8 @@ function edit(id) {
 
 function update(id) {
     const name = document.querySelector(".unome").value.trim();
-    const idade = parseInt(document.querySelector(".utel").value);
-    const sexo = document.querySelector(".pwt").value.trim();
+    const tel = parseInt(document.querySelector(".utel").value);
+    const pet = document.querySelector(".upet").value.trim();
 
     if (name === "" || isNaN(tel) || pet === "") {
         alert("Por favor, preencha todos os campos corretamente.");
@@ -98,8 +98,8 @@ function update(id) {
     const item = data.find(d => d.id === id);
     if (item) {
         item.name = name;
-        item.idade = tel;
-        item.sexo = pet;
+        item.tel = tel;
+        item.pet = pet;
     }
 
     document.querySelector(".formulario-atualizar").style.display = "none";
