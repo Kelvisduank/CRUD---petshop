@@ -18,7 +18,7 @@ Este é um projeto simples de **CRUD** (Create, Read, Update, Delete) para geren
 ## Como Rodar o Projeto :octocat:
  - **Ele está disponivel nesse site**
    <br>
- https://petshop-amigo-fiel.vercel.app/
+https://kelvisduank.github.io/CRUD---petshop/
 
 ### Clonar o Repositório :octocat:
 
