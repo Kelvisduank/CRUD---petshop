@@ -48,7 +48,7 @@ function add() {
     const newObj = { id: currentId++, name, tel, pet };
     data.push(newObj);
 
-   
+
     document.querySelector(".nome").value = "";
     document.querySelector(".tel").value = "";
     document.querySelector(".pet").value = "";
